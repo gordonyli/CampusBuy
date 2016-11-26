@@ -414,3 +414,25 @@ body {
   width:50%;
   margin-left: 25%;
 }
+
+.cover-container {
+  height: 300px;
+  width: 90%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin-left:5%;
+}
+.cover-item {
+  position: relative;
+  display: inline-block;
+  margin: 8px 8px;
+  box-shadow: 2px 2px 4px #bbb;
+  border-top-right-radius: 4px;
+  width: 375px;
+  height: 400px;
+  vertical-align: bottom;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
