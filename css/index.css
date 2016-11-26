@@ -409,3 +409,8 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #222222;
 }
+
+.input-group {
+  width:50%;
+  margin-left: 25%;
+}
