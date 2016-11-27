@@ -1,10 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CampusBuy</title>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/profile_style.css" rel="stylesheet">
+
+    <title>Profile</title>
 </head>
-<body>
-$END$
+<body style="background-color: #00405D">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="index.html">CampusBuy</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="profile.html">My Profile</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="sell_item.html">Sell an Item</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="mycart.html">My Cart</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="myitems.html">My Items</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top: 50px">
+        <div class="row user-menu-container square">
+            <div class="col-md-7 user-details">
+                <div class="row coralbg white">
+                    <div class="col-md-6 no-pad">
+                        <div class="user-pad">
+                            <h3>Welcome back, Jessica</h3>
+                            <h4 class="white"><i class="glyphicon glyphicon-home"></i> John's Creek, GA</h4>
+                            <h4 class="white"><i class="glyphicon glyphicon-envelope"></i> jessica3@gatech.edu</h4>
+                            <h4 class="white"><i class="glyphicon glyphicon-phone"></i> 404 - 284 - 7068</h4>
+                            <button type="button" class="btn btn-labeled btn-info" href="#">
+                                <span class="btn-label"><i class="fa fa-pencil"></i></span>Update</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 no-pad">
+                        <div class="user-image">
+                            <img src="https://farm7.staticflickr.com/6163/6195546981_200e87ddaf_b.jpg" class="img-responsive thumbnail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 user-menu-btns">
+                <div class="btn-group-vertical square" id="responsive">
+                    <a href="#" class="btn btn-block btn-default active">
+                        <i class="fa fa-bell-o fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default">
+                        <i class="fa fa-envelope-o fa-3x"></i>
+                    </a>
+                    <a href="#" class="btn btn-default">
+                        <i class="fa fa-laptop fa-3x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 user-menu user-pad">
+                <div class="user-menu-content active">
+                    <h3>
+                        Recent Interactions
+                    </h3>
+                    <ul class="user-menu-list">
+                        <li>
+                            <h4><i class="fa fa-user coral"></i> Roselynn Smith requests more information.</h4>
+                        </li>
+                        <li>
+                            <h4><i class="fa fa-heart-o coral"></i> Jonathan Hawkins bids $50 for "Red Couch".</h4>
+                        </li>
+                        <li>
+                            <h4><i class="fa fa-paper-plane-o coral"></i> Gracie Jenkins added your item "Red Couch" to cart.</h4>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-labeled btn-success" href="#">
+                                <span class="btn-label"><i class="fa fa-bell-o"></i></span>View all activity</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-menu-content">
+                    <h3>
+                        Your Inbox
+                    </h3>
+                    <ul class="user-menu-list">
+                        <li>
+                            <h4>From Roselyn Smith <small class="coral"><strong>NEW</strong> <i class="fa fa-clock-o"></i> 7:42 A.M.</small></h4>
+                        </li>
+                        <li>
+                            <h4>From Jonathan Hawkins <small class="coral"><i class="fa fa-clock-o"></i> 10:42 A.M.</small></h4>
+                        </li>
+                        <li>
+                            <h4>From Georgia Jennings <small class="coral"><i class="fa fa-clock-o"></i> 10:42 A.M.</small></h4>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-labeled btn-danger" href="#">
+                                <span class="btn-label"><i class="fa fa-envelope-o"></i></span>View All Messages</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user-menu-content">
+                    <h3>
+                        Trending
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="view">
+                                <div class="caption">
+                                    <p>47LabsDesign</p>
+                                    <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
+                                    <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
+                                </div>
+                                <img src="https://cnet1.cbsistatic.com/img/CCSyl2ukaDbTNLh3V6q0frSuRAY=/770x578/2013/11/25/f21beedc-02cf-496c-8923-4a1a8a4fe550/XBox_One_35657846_02_610x436.jpg" class="img-responsive">
+                            </div>
+                            <div class="info">
+                                <p class="small" style="text-overflow: ellipsis">Xbox 1 w/ Controllers</p>
+                                <p class="small coral text-right"><i class="fa fa-clock-o"></i> Posted Today | 10:42 A.M.</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="view">
+                                <div class="caption">
+                                    <p>47LabsDesign</p>
+                                    <a href="" rel="tooltip" title="Appreciate"><span class="fa fa-heart-o fa-2x"></span></a>
+                                    <a href="" rel="tooltip" title="View"><span class="fa fa-search fa-2x"></span></a>
+                                </div>
+                                <img src="http://images.crateandbarrel.com/is/image/Crate/GiaChairTealSHF15_16x9/$web_zoom_furn_hero$/150617162035/gia-chair.jpg" class="img-responsive">
+                            </div>
+                            <div class="info">
+                                <p class="small" style="text-overflow: ellipsis">Aesthetic Couch</p>
+                                <p class="small coral text-right"><i class="fa fa-clock-o"></i> Posted Today | 4:42 P.M.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    $(document).ready(function() {
+        var $btnSets = $('#responsive'),
+            $btnLinks = $btnSets.find('a');
+
+        $btnLinks.click(function(e) {
+            e.preventDefault();
+            $(this).siblings('a.active').removeClass("active");
+            $(this).addClass("active");
+            var index = $(this).index();
+            $("div.user-menu>div.user-menu-content").removeClass("active");
+            $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+        });
+    });
+
+    $( document ).ready(function() {
+        $("[rel='tooltip']").tooltip();
+
+        $('.view').hover(
+            function(){
+                $(this).find('.caption').slideDown(250); //.fadeIn(250)
+            },
+            function(){
+                $(this).find('.caption').slideUp(250); //.fadeOut(205)
+            }
+        );
+    });
+</script>
 </html>
