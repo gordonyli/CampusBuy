@@ -11,240 +11,329 @@
 
     <title>Buy an Item</title>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="js/creative.js"></script>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!-- Bootstrap Core CSS -->
 
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="css/buy_item.css" rel="stylesheet">
 
 
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="index.html">CampusBuy</a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="index.html">CampusBuy</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="profile.html">My Profile</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="sell_item.html">Sell an Item</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="mycart.html">My Cart</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="mymarket.html">My Market</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="prelogin_home.html">Log Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
                 <li>
-                    <a class="page-scroll" href="profile.html">My Profile</a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-star"></i> Seller Rating <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo" class="collapse">
+                        <li>
+                            <a href="#"><i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star-o" aria-hidden="true" style="color:white"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i>
+                            <i class="fa fa-star" aria-hidden="true" style="color:gold"></i></a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a class="page-scroll" href="sell_item.html">Sell an Item</a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-usd"></i> Price <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo1" class="collapse" >
+                        <li>
+                            <a href="#">
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" style="width:50%;">
+                                </div>
+                            </a>
+                            <span style="color:white; margin-left:35%;">to</span>
+                            <a href="#">
+                                <div class="input-group">
+                                    <span class="input-group-addon">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" style="width:50%">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a class="page-scroll" href="mycart.html">My Cart</a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-heart"></i> Condition <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="demo2" class="collapse" >
+                        <li>
+                            <a href="#">New</a>
+                            <a href="#">Like New</a>
+                            <a href="#">Barely Used</a>
+                            <a href="#">Used</a>
+                            <a href="#">Very Used</a>
+                            <a href="#">Poor</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
-                    <a class="page-scroll" href="mymarket.html">My Market</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="prelogin_home.html">Log Out</a>
-                </li>
+
             </ul>
         </div>
-    </div>
-</nav>
-<br>
 
-<!-- Page Content -->
-<div class="container">
 
-    <!-- Page Heading -->
-    <div>
-        <div class="col-lg-12">
-            <h1 class="page-header">
-                <div class="input-group">
-                    <div class="input-group-btn search-panel">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span id="search_concept">All</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#furniture">Furniture</a></li>
-                            <li><a href="#etc">...</a></li>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+
+        <div class="container-fluid">
+            <!-- Page Content -->
+            <div class="container">
+                <!-- Page Heading -->
+                <div>
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            <p style="font-size:15px">1-5 results out of 25 for "Couch"</p>
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search_concept">All</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#furniture">Furniture</a></li>
+                                        <li><a href="#etc">...</a></li>
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">
+                                <input type="text" class="form-control" name="x" placeholder="Search term...">
+
+                                <form action="buy_item.html" class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                </form>
+                            </div>
+                        </h1>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+                <hr>
+                <!-- Project One -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img src = "img/couch2.jpg" style="width:650px;height:300px";>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Project Two</h3>
+                        <h4>Subheading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                        <a class="btn btn-primary" href="#" onclick="showDiv()">Add To Cart<i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:6%"></i></a>
+                        <div class="alert alert-success" id="confirmBuy" style="visibility:hidden">
+                            <strong>Added item to cart!</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Two -->
+                <div class="row" style="padding-top:55px">
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img src = "img/couch1.jpg" style="width:650px;height:300px";>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Project Two</h3>
+                        <h4>Subheading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                        <a class="btn btn-primary" href="#">Add To Cart<i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:6%"></i></a>
+
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Three -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img src = "img/couch3.jpg" style="width:650px;height:300px";>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Project Three</h3>
+                        <h4>Subheading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                        <a class="btn btn-primary" href="#">View Project<i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:6%"></i></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Four -->
+                <div class="row">
+
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img src = "img/couch4.jpg" style="width:650px;height:300px";>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Project Four</h3>
+                        <h4>Subheading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                        <a class="btn btn-primary" href="#">View Project<i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:6%"></i></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <hr>
+
+                <!-- Project Five -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <a href="#">
+                            <img src = "img/couch5.jpg" style="width:650px;height:300px";>
+                        </a>
+                    </div>
+                    <div class="col-md-5">
+                        <h3>Project Five</h3>
+                        <h4>Subheading</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                        <a class="btn btn-primary" href="#">View Project<i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left:6%"></i></a>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <hr>
+                <!-- Pagination -->
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#">&laquo;</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">5</a>
+                            </li>
+                            <li>
+                                <a href="#">&raquo;</a>
+                            </li>
                         </ul>
                     </div>
-                    <input type="hidden" name="search_param" value="all" id="search_param">
-                    <input type="text" class="form-control" name="x" placeholder="Search term...">
-
-                    <form action="buy_item.html" class="input-group-btn">
-                        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-                    </form>
                 </div>
-            </h1>
+                <!-- /.row -->
+                <hr>
+                <!-- Footer -->
+                <footer>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p>Copyright &copy; CampusBuy 2016 Team Tabs, 192</p>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </footer>
 
-        </div>
-    </div>
-    <!-- /.row -->
-    <hr>
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch2.jpg" style="width:650px;height:300px";>
-            </a>
-        </div>
-        <div class="col-md-5">
-            <h3>Project Two</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-            <a class="btn btn-primary" href="#" onclick="showDiv()">Add To Cart<span class="glyphicon glyphicon-chevron-right"></span></a>
-            <div class="alert alert-success" id="confirmBuy" style="visibility:hidden">
-                <strong>Added item to cart!</strong>
             </div>
+            <!-- /.container -->
+
         </div>
+        <!-- /.container-fluid -->
+
     </div>
-
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project Two -->
-    <div class="row" style="padding-top:55px">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch1.jpg" style="width:650px;height:300px";>
-            </a>
-        </div>
-        <div class="col-md-5">
-            <h3>Project Two</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-            <a class="btn btn-primary" href="#">Add To Cart<span class="glyphicon glyphicon-chevron-right"></span></a>
-
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project Three -->
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch3.jpg" style="width:650px;height:300px";>
-            </a>
-        </div>
-        <div class="col-md-5">
-            <h3>Project Three</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project Four -->
-    <div class="row">
-
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch4.jpg" style="width:650px;height:300px";>
-            </a>
-        </div>
-        <div class="col-md-5">
-            <h3>Project Four</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Project Five -->
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch5.jpg" style="width:650px;height:300px";>
-            </a>
-        </div>
-        <div class="col-md-5">
-            <h3>Project Five</h3>
-            <h4>Subheading</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
-            <a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Pagination -->
-    <div class="row text-center">
-        <div class="col-lg-12">
-            <ul class="pagination">
-                <li>
-                    <a href="#">&laquo;</a>
-                </li>
-                <li class="active">
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">&raquo;</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Your Website 2014</p>
-            </div>
-        </div>
-        <!-- /.row -->
-    </footer>
+    <!-- /#page-wrapper -->
 
 </div>
-<!-- /.container -->
+<!-- /#wrapper -->
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
-<script>
-    function showDiv() {
-        document.getElementById('confirmBuy').style.visibility = "visible";
-    }
-</script>
+
+<!-- Morris Charts JavaScript -->
+<script src="js/plugins/morris/raphael.min.js"></script>
+<script src="js/plugins/morris/morris.min.js"></script>
+<script src="js/plugins/morris/morris-data.js"></script>
 
 </body>
 
