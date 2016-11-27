@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Buy an Item</title>
+    <title>My Cart</title>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -26,10 +26,10 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="css/my_Cart.css" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300" rel="stylesheet">
 </head>
 
-<body>
+<body style="font-family: 'Roboto Condensed',sans-serif">
 
 <!-- Navigation -->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
@@ -66,58 +66,77 @@
 <!-- Page Content -->
 <div class="container">
 
-    <!-- Page Heading -->
+    <!-- Jumbotron Header -->
+    <header class="jumbotron hero-spacer" style="background-color: #00405D">
+        <h1 style="color:ghostwhite">My Market</h1>
+        <p style="color: orange">These are your items that you are currently selling and on the market</p>
+        </p>
+    </header>
+
+    <hr>
+
+    <!-- Title -->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">My Market</h1>
+            <h3>Items on Market</h3>
         </div>
     </div>
     <!-- /.row -->
 
-    <!-- Project One -->
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/item8.jpg" style="width:650px;height:300px";>
-            </a>
+    <!-- Page Features -->
+    <div class="row text-center">
+
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <img src="img/item8.jpg" alt="" style="margin-top:20px;">
+                <div class="caption">
+                    <h3>2010 MacBook Pro</h3>
+                    <h4>Like New</h4>
+                    <h4>$120</h4>
+                    <h4>2010 MacBook Pro. 8GB RAM, 512 GB HardDrive</h4>
+                    <p>
+                        <a href="sell_item.html" class="btn btn-primary">Edit Details</a>
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5">
-            <h3>Laptop 2010</h3>
-            <h4>Price - $250</h4>
-            <h4>Condition - Good</h4>
-            <p style="color: black"> Used laptop, in good condition newly replaced battery. 256 gigs and 8gb RAM. Comes with keyboard (not pictured) and charger.</p>
-            <a class="btn btn-primary" href="sell_item.html"> Edit Details </a>
+
+        <div class="col-md-3 col-sm-6 hero-feature">
+            <div class="thumbnail">
+                <img src="img/item3.jpg" alt="">
+                <div class="caption">
+                    <h3>Noise-Cancelling Headphones</h3>
+                    <h4>Barely Used</h4>
+                    <h4>$65</h4>
+                    <h4>Got new headphones so I'm selling these. Pretty much new, great value</h4>
+                    <p>
+                        <a href="sell_item.html" class="btn btn-primary">Edit Details</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- /.row -->
 
     <hr>
 
-    <!-- Project Two -->
-    <div class="row">
-        <div class="col-md-7">
-            <a href="#">
-                <img src = "img/couch6.jpg" style="width:650px;height:300px";>
-            </a>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Your Website 2014</p>
+            </div>
         </div>
-        <div class="col-md-5">
-            <h3>Grey Couch</h3>
-            <h4>Price - $450</h4>
-            <h4>Condition - Used</h4>
-            <p style = "color: black"> Several years old couch. No stains. In okay condition. Can fit 3 people easy. Can help move couch into your home / apartment.</p>
-            <a class="btn btn-primary" href="sell_item.html"> Edit Details</a>
-        </div>
-    </div>
+    </footer>
 
 </div>
 <!-- /.container -->
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
-
 </body>
+<script>
+    function showDiv() {
+        document.getElementById('iteminfo').style.visibility = "visible";
+    }
 
+</script>
 </html>
