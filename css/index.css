@@ -150,7 +150,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/header.jpg');
+  background-color: #00405d;
   text-align: center;
   color: white;
 }
@@ -427,7 +427,6 @@ body {
   position: relative;
   display: inline-block;
   margin: 8px 8px;
-  box-shadow: 2px 2px 4px #bbb;
   border-top-right-radius: 4px;
   width: 375px;
   height: 400px;
