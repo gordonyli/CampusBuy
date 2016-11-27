@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>CampusBuy</title>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="js/creative.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="prelogin_home.html">CampusBuy</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a class="page-scroll" href="index.html">Log In</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <div class="header-content">
+        <div class="header-content-inner">
+            <h1 id="homeHeading" style="color: #2b82ad">
+                Buy <span style="color:#D8D8D8">Smart</span>, Buy <span style="color:#D8D8D8">Safe</span>
+            </h1>
+        </div>
+
+        <div class="input-group" style="width:50%; margin-left:24%; margin-top:2%;">
+            <div class="input-group-btn search-panel">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <span id="search_concept">All</span> <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#furniture">Furniture</a></li>
+                    <li><a href="#etc">...</a></li>
+                </ul>
+            </div>
+            <input type="hidden" name="search_param" value="all" id="search_param">
+            <input type="text" class="form-control" name="x" placeholder="Search term...">
+
+            <form action="buy_item.html" class="input-group-btn">
+                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+        </div>
+        <br>
+        <br>
+
+        <div class="cover-container">
+            <!-- START PANEL -->
+            <div class="cover-item">
+                <img src = "img/item1.jpg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item" >
+                <img src = "img/item2.jpeg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item" >
+                <img src = "img/item3.jpg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item" >
+                <img src = "img/item4.jpg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item">
+                <img src = "img/item5.jpg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item" >
+                <img src = "img/item6.jpg" style="width:504px;height:350px";>
+            </div>
+            <div class="cover-item" >
+                <img src = "img/item7.jpg" style="width:504px;height:350px";>
+            </div>
+
+            <!-- END PANEL -->
+        </div>
+    </div>
+
+</header>
+</body>
+
+<script>
+    $(document).ready(function(e){
+        $('.search-panel .dropdown-menu').find('a').click(function(e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#","");
+            var concept = $(this).text();
+            $('.search-panel span#search_concept').text(concept);
+            $('.input-group #search_param').val(param);
+        });
+    });
+</script>
+
+</html>
