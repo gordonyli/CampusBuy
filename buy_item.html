@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>1 Col Portfolio - Start Bootstrap Template</title>
+    <title>Buy an Item</title>
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -66,9 +66,27 @@
     <!-- Page Heading -->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Page Heading
-                <small>Secondary Text</small>
+            <h1 class="page-header">Couch
+                <small>Secondary Text</small><br><br>
+                <div class="input-group">
+                    <div class="input-group-btn search-panel">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">All</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#furniture">Furniture</a></li>
+                            <li><a href="#etc">...</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+
+                    <form action="buy_item.html" class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                </div>
             </h1>
+
         </div>
     </div>
     <!-- /.row -->
